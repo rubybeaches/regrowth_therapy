@@ -27,7 +27,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-rose-600 text-white relative">
+        <section className="bg-sage-100 text-white relative">
           <div className="container mx-auto px-4 py-16">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-serif mb-4">
@@ -37,24 +37,34 @@ export default function Home() {
                 </span>
               </h1>
               <div className="grid grid grid-cols-1 md:grid-cols-2 gap-6 relative">
-                <span>
+                <Image
+                  src="/hero-image.png"
+                  className="absolute right-[0] top-[25vw] sm:top-[20px] md:top-[10px]"
+                  alt="background image containing logo"
+                  width={900}
+                  height={760}
+                  sizes="50vw"
+                  style={{
+                    width: "50vw",
+                  }}
+                />
+                <Image
+                  src="/full_body.png"
+                  className="absolute right-[0] w-[300px] sm:w-[350px] md:w-[450px] lg:w-[550px] xl:w-[700px] top-[15vw] sm:top-[20px] md:top-[10px]"
+                  alt="hero image of Ruby"
+                  width={1170}
+                  height={1638}
+                />
+                <span className="relative">
                   <p className="text-lg mb-8 font-serif">
                     Start your regrowth today. Book a free discovery call to map
                     the modality that will work best for you.
                   </p>
-                  <Button className="bg-rose-700 hover:bg-rose-400 rounded-full px-8 text-lg">
+                  <Button className="bg-rose-600 hover:bg-rose-700 rounded-full px-8 text-lg">
                     Book Now
                   </Button>
                 </span>
-                <div style={{ height: "500px" }}>
-                  <Image
-                    src="/hero-image.png"
-                    className="absolute"
-                    alt="hero image of Ruby"
-                    width={808}
-                    height={1131}
-                  />
-                </div>
+                <div className="h-[35vw] sm:h-[20vw] md:h-[40vw]"></div>
               </div>
             </div>
           </div>

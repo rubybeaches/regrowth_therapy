@@ -12,8 +12,8 @@ module.exports = {
     extend: {
       colors: {
         rose: {
-          400: "#E75D7C",
-          600: "#DE174D",
+          400: "#DE174D",
+          600: "#CF3251",
           700: "#951E3F",
         },
         sage: {
