@@ -13,17 +13,18 @@ module.exports = {
       colors: {
         rose: {
           400: "#E75D7C",
-          600: "#D64D6C",
-          700: "#C43D5C",
+          600: "#DE174D",
+          700: "#951E3F",
         },
         sage: {
-          50: "#F5F7F5",
-          100: "#E8EDE8",
-          700: "#4A5D4A",
-          800: "#3A4D3A",
+          50: "#98A87B",
+          100: "#54634E",
+          700: "#394D34",
+          800: "#232E20",
         },
         cream: {
-          50: "#FDFBF7",
+          50: "#F2E9D3",
+          100: "#EDE1BE",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -60,7 +61,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        script: ["var(--font-dancing-script)", "cursive"],
+        script: ["var(--font-monte)", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",

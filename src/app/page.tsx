@@ -7,14 +7,14 @@ import { services } from "@/lib/globals";
 export default function Home() {
   return (
     <div className="min-h-screen bg-sage-50">
-      <header className="bg-sage-700 text-white py-4">
-        <div className="container max-w-4xl mx-auto px-4 flex justify-between items-center">
+      <header className="bg-sage-100 text-white py-4">
+        <div className="container max-w-4xl mx-auto px-4 flex justify-between items-center text-lg">
           <div className="flex items-center gap-2">
             <Image
               src="/butterfly_logo_white.png"
               alt="Butterfly logo"
-              width={24}
-              height={24}
+              width={36}
+              height={36}
             />
             <span>Regrowth Therapy & Healing</span>
           </div>
@@ -27,22 +27,35 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-rose-400 text-white relative overflow-hidden">
+        <section className="bg-rose-600 text-white relative">
           <div className="container mx-auto px-4 py-16">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl font-serif mb-4">
                 REGROWTH THERAPY & HEALING
-                <span className="block font-script text-3xl mt-2">
+                <span className="block font-script text-5xl mt-2">
                   with Ruby
                 </span>
               </h1>
-              <p className="text-lg mb-8">
-                Start your regrowth today. Book a free discovery call to map the
-                modality that will work best for you.
-              </p>
-              <Button className="bg-rose-600 hover:bg-rose-700">
-                Book Now
-              </Button>
+              <div className="grid grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+                <span>
+                  <p className="text-lg mb-8 font-serif">
+                    Start your regrowth today. Book a free discovery call to map
+                    the modality that will work best for you.
+                  </p>
+                  <Button className="bg-rose-700 hover:bg-rose-400 rounded-full px-8 text-lg">
+                    Book Now
+                  </Button>
+                </span>
+                <div style={{ height: "500px" }}>
+                  <Image
+                    src="/hero-image.png"
+                    className="absolute"
+                    alt="hero image of Ruby"
+                    width={808}
+                    height={1131}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -62,11 +75,11 @@ export default function Home() {
         </section>
 
         {/* Partner Section */}
-        <section className="bg-sage-100 py-16">
+        <section className="bg-cream-50 py-16">
           <div className="container max-w-4xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1">
-                <h2 className="text-2xl font-serif text-rose-600 mb-4">
+                <h2 className="text-3xl font-serif text-rose-600 mb-4">
                   Your Partner in Transformation
                 </h2>
                 <p className="text-gray-700">
@@ -82,7 +95,7 @@ export default function Home() {
               </div>
               <div className="w-48 h-48 rounded-full overflow-hidden">
                 <Image
-                  src="/butterfly_logo_white.png"
+                  src="/portrait.png"
                   alt="Therapist portrait"
                   width={192}
                   height={192}
@@ -101,15 +114,12 @@ export default function Home() {
             </h2>
             <div className="grid grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {services.map((service) => (
-                <Card key={service.title} className="p-6 bg-cream-50">
+                <Card key={service.title} className="p-6 bg-cream-100">
                   <h3 className="text-xl font-semibold mb-2">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Button
-                    variant="outline"
-                    className="bg-sage-700 text-white hover:bg-sage-800"
-                  >
+                  <Button className="bg-sage-700 text-white hover:bg-sage-800">
                     Learn More
                   </Button>
                 </Card>
@@ -119,14 +129,16 @@ export default function Home() {
         </section>
 
         {/* Booking Section */}
-        <section className="bg-sage-100 py-16">
+        <section className="bg-cream-50 py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-serif text-center mb-12">
               Book Your Session
             </h2>
             <div className="grid grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="p-6">
-                <h3 className="text-xl font-semibold mb-4">New Clients</h3>
+              <Card className="p-6 border-2 border-sage-700">
+                <h3 className="text-2xl font-bold mb-4 text-sage-700">
+                  New Clients
+                </h3>
                 <p className="mb-4">
                   Book a free consultation to discuss your needs.
                 </p>
@@ -139,7 +151,9 @@ export default function Home() {
                 </Button>
               </Card>
               <Card className="p-6">
-                <h3 className="text-xl font-semibold mb-4">Existing Clients</h3>
+                <h3 className="text-2xl font-bold mb-4 text-sage-700">
+                  Existing Clients
+                </h3>
                 <p className="mb-4">
                   Schedule your next therapy or healing session
                 </p>
@@ -155,7 +169,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-sage-700 text-white py-8">
+      <footer className="bg-sage-100 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>© Regrowth Therapy & Healing LLC. All Rights Reserved</p>
         </div>

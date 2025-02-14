@@ -1,15 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Caladea, Tinos, MonteCarlo } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const caladea = Caladea({
+  variable: "--font-caladea",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const tinos = Tinos({
+  variable: "--font-tinos",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const script = MonteCarlo({
+  variable: "--font-monte",
+  weight: ["400"],
+  style: ["normal"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -28,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${caladea.variable} ${tinos.variable} ${script.variable} antialiased`}
       >
         {children}
       </body>
