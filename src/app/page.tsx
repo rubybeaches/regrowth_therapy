@@ -18,19 +18,23 @@ export default function Home() {
             />
             <span>Regrowth Therapy & Healing</span>
           </div>
-          <nav className="flex gap-4">
-            <Link href="#services">Services</Link>
-            <Link href="#faq">FAQ</Link>
+          <nav className="flex gap-2">
+            <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
+              Services
+            </Button>
+            <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
+              FAQ
+            </Button>
           </nav>
         </div>
       </header>
 
       <main>
         {/* Hero Section */}
-        <section className="bg-sage-100 text-white relative">
+        <section className="bg-sage-100 text-white relative shadow-xl">
           <div className="container mx-auto px-4 py-16">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-serif mb-4">
+              <h1 className="text-4xl md:text-5xl font-serif mb-8">
                 REGROWTH THERAPY & HEALING
                 <span className="block font-script text-5xl mt-2">
                   with Ruby
@@ -56,7 +60,7 @@ export default function Home() {
                   height={1638}
                 />
                 <span className="relative">
-                  <p className="text-lg mb-8 font-serif">
+                  <p className="text-lg mb-6 font-serif">
                     Start your regrowth today. Book a free discovery call to map
                     the modality that will work best for you.
                   </p>
@@ -73,10 +77,10 @@ export default function Home() {
         {/* Vision Section */}
         <section className="bg-cream-50 py-16">
           <div className="container max-w-4xl mx-auto px-4">
-            <h2 className="text-2xl font-serif mb-6">
+            <h2 className="text-3xl font-serif mb-6 text-sage-700">
               Imagine a life where...
             </h2>
-            <div className="space-y-4 text-gray-700">
+            <div className="space-y-2 text-sage-800 text-lg">
               <p>You wake up each day energized, focused, and at peace.</p>
               <p>You let go of fears and patterns that no longer serve you.</p>
               <p>You create space for love, joy, and (re)growth.</p>
@@ -85,19 +89,29 @@ export default function Home() {
         </section>
 
         {/* Partner Section */}
-        <section className="bg-cream-50 py-16">
+        <section className="bg-cream-100 py-16">
           <div className="container max-w-4xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1">
-                <h2 className="text-3xl font-serif text-rose-600 mb-4">
-                  Your Partner in Transformation
-                </h2>
-                <p className="text-gray-700">
-                  Welcome! I'm Ruby, a certified hypnotherapist and energy
-                  healer. I'm passionate about helping individuals find balance
-                  and harmony in their lives.
+                <div className="flex items-center gap-2 mb-4">
+                  <Image
+                    src="/butterfly_logo_red.png"
+                    alt="Butterfly logo"
+                    width={48}
+                    height={48}
+                  />
+                  <h2 className="text-3xl font-serif text-rose-600">
+                    Your Partner in Transformation
+                  </h2>
+                </div>
+                <p className="text-sage-800 text-lg">
+                  Welcome! I'm{" "}
+                  <span className="text-rose-400 font-semibold">Ruby</span>, a
+                  certified hypnotherapist and energy healer. I'm passionate
+                  about helping individuals find balance and harmony in their
+                  lives.
                 </p>
-                <p className="mt-4 text-gray-700">
+                <p className="mt-4 text-sage-800 text-lg">
                   Whether you're seeking relief from stress, clarity in life's
                   challenges, or freedom from old patterns, I'm here to help you
                   rediscover your power and potential.
@@ -119,21 +133,45 @@ export default function Home() {
         {/* Services Grid */}
         <section className="py-16" id="services">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-serif text-center mb-12">
+            <h2 className="text-3xl font-serif font-semibold text-center mb-12 text-sage-700">
               Therapeutic Services Available
             </h2>
             <div className="grid grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {services.map((service) => (
-                <Card key={service.title} className="p-6 bg-cream-100">
-                  <h3 className="text-xl font-semibold mb-2">
+              {services.map((service, index) => (
+                <Card key={index} className="p-6 bg-cream-100">
+                  <h3
+                    className={`text-2xl font-semibold mb-2 ${
+                      index > 0 ? "text-sage-700" : "text-rose-600"
+                    }`}
+                  >
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Button className="bg-sage-700 text-white hover:bg-sage-800">
+                  <p
+                    className={`${
+                      index > 0 ? "text-sage-700" : "text-rose-800"
+                    } mb-4`}
+                  >
+                    {service.description}
+                  </p>
+                  <Button
+                    className={`${
+                      index > 0
+                        ? "bg-sage-700 hover:bg-sage-800"
+                        : "bg-rose-600 hover:bg-rose-700"
+                    } text-white text-base`}
+                  >
                     Learn More
                   </Button>
                 </Card>
               ))}
+            </div>
+            <div className="text-center mt-12">
+              <p className="text-2xl mb-4 font-serif">
+                Discuss which modality will work best to meet your needs.
+              </p>
+              <Button className="bg-rose-600 hover:bg-rose-700 rounded-full px-8 text-lg">
+                Book a Free Discovery Call
+              </Button>
             </div>
           </div>
         </section>
@@ -141,36 +179,36 @@ export default function Home() {
         {/* Booking Section */}
         <section className="bg-cream-50 py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-serif text-center mb-12">
+            <h2 className="text-3xl font-serif font-semibold text-center mb-12 text-sage-700">
               Book Your Session
             </h2>
             <div className="grid grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <Card className="p-6 border-2 border-sage-700">
-                <h3 className="text-2xl font-bold mb-4 text-sage-700">
+                <h3 className="text-2xl font-bold mb-2 text-sage-700">
                   New Clients
                 </h3>
-                <p className="mb-4">
-                  Book a free consultation to discuss your needs.
+                <p className="mb-4 text-sage-700">
+                  Book a free consultation to discuss your needs
                 </p>
-                <p className="mb-6">
+                <p className="mb-6 text-lg text-sage-700">
                   During this 15-minute session, we'll explore how I can help
                   you achieve your goals.
                 </p>
-                <Button className="w-full bg-sage-700 text-white hover:bg-sage-800">
+                <Button className="w-full bg-sage-700 text-base text-white hover:bg-sage-800">
                   Book Consultation
                 </Button>
               </Card>
               <Card className="p-6">
-                <h3 className="text-2xl font-bold mb-4 text-sage-700">
+                <h3 className="text-2xl font-bold mb-2 text-sage-700">
                   Existing Clients
                 </h3>
-                <p className="mb-4">
+                <p className="mb-4 text-sage-700">
                   Schedule your next therapy or healing session
                 </p>
-                <p className="mb-6">
+                <p className="mb-6 text-lg text-sage-700">
                   Choose from available time slots for your preferred service.
                 </p>
-                <Button className="w-full bg-sage-700 text-white hover:bg-sage-800">
+                <Button className="w-full bg-sage-700 text-base text-white hover:bg-sage-800">
                   Book Session
                 </Button>
               </Card>
