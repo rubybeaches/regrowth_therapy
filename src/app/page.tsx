@@ -219,8 +219,8 @@ export default function Home() {
           <Image
             src="/credits/IAPCP.png"
             alt="International Alliance Professional Complementary Practictioners Accredited Member"
-            width={267}
-            height={125}
+            width={271}
+            height={136}
           />
           <Image
             src="/credits/MCH.png"
