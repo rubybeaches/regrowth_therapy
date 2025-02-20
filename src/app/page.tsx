@@ -68,7 +68,7 @@ export default function Home() {
         </section>
 
         {/* Partner Section */}
-        <section className="bg-cream-100 py-16">
+        <section className="bg-cream-100 py-12">
           <div className="container max-w-4xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1">
@@ -110,9 +110,9 @@ export default function Home() {
         </section>
 
         {/* Services Grid */}
-        <section className="py-16" id="services">
+        <section className="py-12" id="services">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-serif font-semibold text-center mb-12 text-sage-700">
+            <h2 className="text-3xl font-serif font-semibold text-center mb-8 text-sage-700">
               Therapeutic Services Available
             </h2>
             <div className="grid grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">

@@ -52,9 +52,9 @@ export default function Landing({
       </section>
 
       {/* Booking Section */}
-      <section className="py-16 bg-sage-100">
+      <section className="py-12 bg-sage-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif font-semibold text-center mb-12 text-white">
+          <h2 className="text-3xl font-serif font-semibold text-center mb-8 text-white">
             How it Works
           </h2>
           <div className="grid grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
