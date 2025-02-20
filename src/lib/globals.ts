@@ -5,21 +5,15 @@ export const services = [
     link: "energy-healing",
   },
   {
-    title: "Stress Relief",
+    title: "Anxiety & Stress Relief",
     description:
-      "Learn effective techniques to manage and reduce stress in your daily life. Overcome stressful situations.",
-    link: "",
+      "Learn effective techniques to manage and reduce stress in your daily life. Overcome stressful situations, thoughts and nervousness.",
+    link: "hypnotherapy-for-anxiety",
   },
   {
     title: "Improved Sleep",
     description:
       "Discover methods to enhance your sleep quality and overcome insomnia",
-    link: "",
-  },
-  {
-    title: "Anxiety Management",
-    description:
-      "Learn effective techniques to manage and reduce stress in your daily life. Overcome stressful thoughts and nervousness.",
     link: "",
   },
   {
@@ -42,6 +36,12 @@ export const services = [
   {
     title: "Fears & Phobias",
     description: "More information on energy healing benefits and what I offer",
+    link: "",
+  },
+  {
+    title: "Custom Plan",
+    description:
+      "Not seeing your specifc need here? Feel free to book a call, and see if we can tailor a plan for you!",
     link: "",
   },
 ];
@@ -69,11 +69,44 @@ export const EnergyHealing = {
     ],
     [
       "Do I need to believe in energy healing for it to work?",
-      "No! Whether you’re spiritual or not, energy healing works by realigning your body’s natural energy flow, which can have profound effects on your well-being. Many clients feel lighter, calmer, and more balanced after just one session.",
+      "No! Whether you're spiritual or not, energy healing works by realigning your body’s natural energy flow, which can have profound effects on your well-being. Many clients feel lighter, calmer, and more balanced after just one session.",
     ],
     [
       "Can I combine hypnotherapy and energy healing?",
       "Absolutely! Hypnotherapy rewires your subconscious, while energy healing clears blockages that might be holding you back. Combining both can lead to faster and deeper transformations.",
+    ],
+  ],
+};
+
+export const StressRelief = {
+  metaTitle:
+    "Hypnotherapy for Anxiety | Natural Anxiety Relief & Stress Reduction",
+  metaDescription:
+    "Struggling with anxiety? Hypnotherapy helps rewire your mind for calm & confidence. Book your virtual session today for lasting relief & transformation.",
+  title: "Hypnotherapy for Anxiety & Stress Relief",
+  description:
+    "Imagine waking up feeling in control, calm, and confident—no more racing thoughts, no more tight chest, no more feeling stuck in a cycle of worry. Hypnotherapy can help you rewire anxious thought patterns, retrain your mind for relaxation, and regain peace in your daily life.",
+  whyTitle: "Why Hypnotherapy Works for Anxiety",
+  whyDescription:
+    "Traditional methods focus on managing anxiety, but hypnosis works at the root cause—your subconscious mind. Through guided relaxation and powerful hypnotic suggestions to enter a relaxed state and modify thoughts and events creating anxiety. This state can be anchored so you can call on it anytime.",
+  benefits: [
+    "Feel calm and in control in stressful situations.",
+    "Reduce overthinking and intrusive thoughts.",
+    "Let go of past emotional burdens.",
+    "Learn subconscious techniques to maintain peace daily.",
+  ],
+  faqs: [
+    [
+      "Does hypnosis really work for anxiety?",
+      "Yes! Hypnosis bypasses the conscious mind to retrain your subconscious, where anxiety inducing habits are stored. Studies[1] show that hypnotherapy can significantly reduce stress, fear, and overthinking.",
+    ],
+    [
+      "What if I can't be hypnotized?",
+      "Hypnosis is a natural state you enter daily (like daydreaming). With guided sessions, anyone can experience its benefits, even if you're skeptical!",
+    ],
+    [
+      "How many sessions will I need?",
+      "Many clients notice a difference after just one session, but lasting transformation often takes 3-5 sessions. You'll also get a recorded session to reinforce progress at home.",
     ],
   ],
 };
@@ -89,10 +122,10 @@ export const AddictionChange = {
   whyDescription:
     "Most bad habits are deeply ingrained in the unconscious mind. These habits are repeatedly reinforced, creating strong bonds within our brains. Hypnotherapy addresses the root cause, making it easier to change behaviors effortlessly and then replace them with healthy ones.",
   benefits: [
-    "Break free from smoking, nail-biting, emotional eating, and other habits",
-    "Reduce cravings and compulsive urges",
-    "Strengthen self-discipline effortlessly",
-    "Replace bad habits with empowering ones",
+    "Break free from smoking, nail-biting, emotional eating, and other habits.",
+    "Reduce cravings and compulsive urges.",
+    "Strengthen self-discipline effortlessly.",
+    "Replace bad habits with empowering ones.",
   ],
   faqs: [
     [
