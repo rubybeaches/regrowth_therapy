@@ -3,31 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { services } from "@/lib/globals";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-sage-50">
-      <header className="bg-sage-100 text-white py-4">
-        <div className="container max-w-4xl mx-auto px-4 flex justify-between items-center text-lg">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/butterfly_logo_white.png"
-              alt="Butterfly logo"
-              width={36}
-              height={36}
-            />
-            <span>Regrowth Therapy & Healing</span>
-          </div>
-          <nav className="flex gap-2">
-            <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
-              Services
-            </Button>
-            <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
-              FAQ
-            </Button>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main>
         {/* Hero Section */}
@@ -157,7 +139,7 @@ export default function Home() {
                         : "bg-rose-600 hover:bg-rose-700"
                     } text-white text-base`}
                   >
-                    Learn More
+                    <Link href={`landing/${service.link}`}>Learn More</Link>
                   </Button>
                 </Card>
               ))}
@@ -214,37 +196,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-sage-100 text-white py-8">
-        <div className="container max-w-4xl mx-auto gap-4 flex flex-col md:flex-row justify-between items-center mb-4">
-          <Image
-            src="/credits/IAPCP.png"
-            alt="International Alliance Professional Complementary Practictioners Accredited Member"
-            width={271}
-            height={136}
-          />
-          <Image
-            src="/credits/MCH.png"
-            alt="Mindvalley Certified Coach"
-            width={132}
-            height={100}
-          />
-          <Image
-            src="/credits/RHA.png"
-            alt="Reiki Healing Association Member"
-            width={136}
-            height={136}
-          />
-          <Image
-            src="/credits/Regrowth.png"
-            alt="Regrowth Therapy and Healing Logo"
-            width={240}
-            height={87}
-          />
-        </div>
-        <div className="container mx-auto px-4 text-center">
-          <p>© Regrowth Therapy & Healing LLC. All Rights Reserved</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
