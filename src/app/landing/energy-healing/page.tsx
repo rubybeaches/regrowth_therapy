@@ -11,18 +11,14 @@ export const metadata: Metadata = {
 
 const HypnotherapyEnergyHealing = () => {
   return (
-    <div className="min-h-screen bg-sage-50">
-      <Header />
-      <Landing
-        title={EnergyHealing.title}
-        description={EnergyHealing.description}
-        whyTitle={EnergyHealing.whyTitle}
-        whyDescription={EnergyHealing.whyDescription}
-        benefits={EnergyHealing.benefits}
-        faqs={EnergyHealing.faqs}
-      />
-      <Footer />
-    </div>
+    <Landing
+      title={EnergyHealing.title}
+      description={EnergyHealing.description}
+      whyTitle={EnergyHealing.whyTitle}
+      whyDescription={EnergyHealing.whyDescription}
+      benefits={EnergyHealing.benefits}
+      faqs={EnergyHealing.faqs}
+    />
   );
 };
 

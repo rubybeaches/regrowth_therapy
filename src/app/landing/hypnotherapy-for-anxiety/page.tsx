@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 
 const HypnotherapyStressRelief = () => {
   return (
-    <div className="min-h-screen bg-sage-50">
-      <Header />
+    <>
       <Landing
         title={StressRelief.title}
         description={StressRelief.description}
@@ -36,8 +35,7 @@ const HypnotherapyStressRelief = () => {
           and see what I can do for you!
         </p>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

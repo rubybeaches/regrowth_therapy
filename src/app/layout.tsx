@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Caladea, Tinos, MonteCarlo } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
 const caladea = Caladea({
   variable: "--font-caladea",
@@ -40,9 +42,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`${caladea.variable} ${tinos.variable} ${script.variable} antialiased`}
+        className={`min-h-screen bg-sage-50 ${caladea.variable} ${tinos.variable} ${script.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
