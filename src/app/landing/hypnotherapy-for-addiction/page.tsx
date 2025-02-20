@@ -1,54 +1,29 @@
-import Landing from "@/components/ui/landing";
 import type { Metadata } from "next";
-
-const landingInfo = {
-  metaTitle: "Hypnotherapy for Addiction | Break Free From Bad Habits",
-  metaDescription:
-    "Struggling with smoking, overeating, or another habit? Hypnotherapy helps rewire your brain for lasting change. Book your first session today!",
-  title: "Hypnotherapy for Addiction & Habit Change",
-  description:
-    "Struggling to quit smoking, overeating, or another habit? Willpower alone isn't enough - your unconscious mind holds the key to lasting change. Hypnotherapy can help reprogram your mind to let go of cravings and compulsions",
-  whyTitle: "Why Hypnosis Works for Habit Change",
-  whyDescription:
-    "Most bad habits are deeply ingrained in the unconscious mind. These habits are repeatedly reinforced, creating strong bonds within our brains. Hypnotherapy addresses the root cause, making it easier to change behaviors effortlessly and then replace them with healthy ones.",
-  benefits: [
-    "Break free from smoking, nail-biting, emotional eating, and other habits",
-    "Reduce cravings and compulsive urges",
-    "Strengthen self-discipline effortlessly",
-    "Replace bad habits with empowering ones",
-  ],
-  faqs: [
-    [
-      "Can hypnosis help me if I've tried other methods and failed?",
-      "Yes! Unlike willpower based approaches, hypnotherapy works at the unconscious level, addressing the root causes of habits, fears, or mental blocks. This makes change feel natural and lasting instead of forced.",
-    ],
-    [
-      "What if I can't be hypnotized?",
-      "Hypnosis is a natural state you enter daily (like daydreaming). With guided sessions, anyone can experience its benefits, even if you're skeptical!",
-    ],
-    [
-      "How many sessions will I need?",
-      "Many clients notice a difference after just one session, but lasting transformation often takes 3-5 sessions. You'll also get a recorded session to reinforce progress at home.",
-    ],
-  ],
-};
+import { AddictionChange } from "@/lib/globals";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
+import Landing from "@/components/ui/landing";
 
 export const metadata: Metadata = {
-  title: landingInfo.metaTitle,
-  description: landingInfo.metaDescription,
+  title: AddictionChange.metaTitle,
+  description: AddictionChange.metaDescription,
 };
 
-const HypnotherapyAddiction = () => {
+const HypnotherapyAddictionChange = () => {
   return (
-    <Landing
-      title={landingInfo.title}
-      description={landingInfo.description}
-      whyTitle={landingInfo.whyTitle}
-      whyDescription={landingInfo.whyDescription}
-      benefits={landingInfo.benefits}
-      faqs={landingInfo.faqs}
-    />
+    <div className="min-h-screen bg-sage-50">
+      <Header />
+      <Landing
+        title={AddictionChange.title}
+        description={AddictionChange.description}
+        whyTitle={AddictionChange.whyTitle}
+        whyDescription={AddictionChange.whyDescription}
+        benefits={AddictionChange.benefits}
+        faqs={AddictionChange.faqs}
+      />
+      <Footer />
+    </div>
   );
 };
 
-export default HypnotherapyAddiction;
+export default HypnotherapyAddictionChange;

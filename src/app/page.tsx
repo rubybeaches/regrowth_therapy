@@ -132,15 +132,17 @@ export default function Home() {
                   >
                     {service.description}
                   </p>
-                  <Button
-                    className={`${
-                      index > 0
-                        ? "bg-sage-700 hover:bg-sage-800"
-                        : "bg-rose-600 hover:bg-rose-700"
-                    } text-white text-base`}
-                  >
-                    <Link href={`landing/${service.link}`}>Learn More</Link>
-                  </Button>
+                  <Link href={`landing/${service.link}`}>
+                    <Button
+                      className={`${
+                        index > 0
+                          ? "bg-sage-700 hover:bg-sage-800"
+                          : "bg-rose-600 hover:bg-rose-700"
+                      } text-white text-base`}
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
                 </Card>
               ))}
             </div>
