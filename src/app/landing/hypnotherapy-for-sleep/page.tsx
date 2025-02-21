@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { StressRelief } from "@/lib/globals";
+import { ImprovedSleep } from "@/lib/globals";
 import Landing from "@/components/ui/landing";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: StressRelief.metaTitle,
-  description: StressRelief.metaDescription,
+  title: ImprovedSleep.metaTitle,
+  description: ImprovedSleep.metaDescription,
 };
 
-const HypnotherapyStressRelief = () => {
+const HypnotherapyImprovedSleep = () => {
   return (
     <>
       <Landing
-        title={StressRelief.title}
-        description={StressRelief.description}
-        whyTitle={StressRelief.whyTitle}
-        whyDescription={StressRelief.whyDescription}
-        benefits={StressRelief.benefits}
-        faqs={StressRelief.faqs}
+        title={ImprovedSleep.title}
+        description={ImprovedSleep.description}
+        whyTitle={ImprovedSleep.whyTitle}
+        whyDescription={ImprovedSleep.whyDescription}
+        benefits={ImprovedSleep.benefits}
+        faqs={ImprovedSleep.faqs}
       />
       <div className="bg-sage-100 py-4">
         <p className="max-w-4xl mx-auto text-cream-100 text-center text-sm">
@@ -37,4 +37,4 @@ const HypnotherapyStressRelief = () => {
   );
 };
 
-export default HypnotherapyStressRelief;
+export default HypnotherapyImprovedSleep;

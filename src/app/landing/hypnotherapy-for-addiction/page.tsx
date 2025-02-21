@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { AddictionChange } from "@/lib/globals";
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
 import Landing from "@/components/ui/landing";
 
 export const metadata: Metadata = {

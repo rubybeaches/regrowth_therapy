@@ -14,7 +14,7 @@ export const services = [
     title: "Improved Sleep",
     description:
       "Discover methods to enhance your sleep quality and overcome insomnia",
-    link: "",
+    link: "hypnotherapy-for-sleep",
   },
   {
     title: "Addiction & Habit Change",
@@ -99,6 +99,38 @@ export const StressRelief = {
     [
       "Does hypnosis really work for anxiety?",
       "Yes! Hypnosis bypasses the conscious mind to retrain your subconscious, where anxiety inducing habits are stored. Studies[1] show that hypnotherapy can significantly reduce stress, fear, and overthinking.",
+    ],
+    [
+      "What if I can't be hypnotized?",
+      "Hypnosis is a natural state you enter daily (like daydreaming). With guided sessions, anyone can experience its benefits, even if you're skeptical!",
+    ],
+    [
+      "How many sessions will I need?",
+      "Many clients notice a difference after just one session, but lasting transformation often takes 3-5 sessions. You'll also get a recorded session to reinforce progress at home.",
+    ],
+  ],
+};
+
+export const ImprovedSleep = {
+  metaTitle: "Hypnosis for Sleep | Overcome Insomnia & Wake Up Rested",
+  metaDescription:
+    "Struggling with sleep? Hypnotherapy helps reset your mind for deep, restful sleep. Wake up refreshed—book your virtual session today!",
+  title: "Hypnotherapy for Sleep & Insomnia",
+  description:
+    "Tired of tossing and turning? Struggling with insomnia or restless sleep can drain your energy, mood, and focus. Hypnotherapy helps reset your sleep cycle, quiet your mind, and guide your body into deep, natural rest.",
+  whyTitle: "Why Hypnotherapy Works for Sleep",
+  whyDescription:
+    "Sleep problems often come from stress, anxiety, or overactive thoughts. Through hypnosis, we can discover and diagnose the root of the issue and work at the subconscious level to restore balance.",
+  benefits: [
+    "Fall asleep faster, without tossing and turning.",
+    "Deep restorative sleep to wake up refreshed instead groggy.",
+    "Qiuet racing thoughts at night and wind down easier.",
+    "Reduce reliance on sleeping aids or pills.",
+  ],
+  faqs: [
+    [
+      "Will hypnosis put me to sleep?",
+      "Not during the session, but you'll be in a deeply relaxed state. The techniques are geared towards training your mind to fall asleep naturally each night.",
     ],
     [
       "What if I can't be hypnotized?",
