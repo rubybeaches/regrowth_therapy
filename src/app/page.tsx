@@ -3,8 +3,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { services } from "@/lib/globals";
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
@@ -49,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* Vision Section */}
-      <section className="bg-cream-50 py-16">
+      <section className="bg-cream-100 py-16">
         <div className="container max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-serif mb-6 text-sage-700">
             Imagine a life where...
@@ -60,6 +58,11 @@ export default function Home() {
             <p>You create space for love, joy, and (re)growth.</p>
           </div>
         </div>
+      </section>
+
+      {/* Red Divider */}
+      <section className="bg-cream-100">
+        <hr className="max-w-4xl mx-auto border border-solid border-sage-100 md:border-rose-600 " />
       </section>
 
       {/* Partner Section */}
@@ -104,7 +107,16 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-12" id="services">
+      <section className="pb-12" id="services">
+        <Image
+          src="/wavy_cream.png"
+          className="mb-6 relative top-[-2px]"
+          alt="wavy background section divider"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-semibold text-center mb-8 text-sage-700">
             Therapeutic Services Available
@@ -152,7 +164,16 @@ export default function Home() {
       </section>
 
       {/* Booking Section */}
-      <section className="bg-cream-50 py-16">
+      <section className="bg-cream-50 pb-16">
+        <Image
+          src="/wavy_sage.png"
+          className="mb-6 relative top-[-2px]"
+          alt="wavy background section divider"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif font-semibold text-center mb-12 text-sage-700">
             Book Your Session

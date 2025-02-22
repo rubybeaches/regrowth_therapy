@@ -307,3 +307,4 @@ export const CustomPlan = {
 };
 
 // Add an FAQ entry about hypnotherapy side effects - easier to make phone calls, daily life stuff getting easier...etc.
+// as well as the combining plans option faw from custom
