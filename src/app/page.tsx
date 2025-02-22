@@ -3,10 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { services } from "@/lib/globals";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
     <main>
+      <Header />
       {/* Hero Section */}
       <section className="text-white relative shadow-xl">
         <div className="container mx-auto px-4 py-16">
@@ -138,7 +141,7 @@ export default function Home() {
                 >
                   {service.description}
                 </p>
-                <Link href={`landing/${service.link}`}>
+                <Link href={`/${service.link}`}>
                   <Button
                     className={`${
                       index > 0
@@ -211,6 +214,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }

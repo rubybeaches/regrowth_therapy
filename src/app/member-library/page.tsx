@@ -37,10 +37,10 @@ const videos = [
 
 const VideoLibrary = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <main className="bg-cream-50 p-8 text-sage-800">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">Your Video Library</h1>
+          <h1 className="text-2xl font-bold">Your Session Library</h1>
           <Button variant="outline">Logout</Button>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -50,22 +50,26 @@ const VideoLibrary = () => {
                 <CardTitle className="text-lg">{video.title}</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
-                <div className="aspect-video bg-gray-200">
+                <div className="aspect-video bg-sage-50">
+                  {/*
                   <img
-                    src={video.url || "/placeholder.svg"}
+                    src={video.url || ""}
                     alt={`Thumbnail for ${video.title}`}
                     className="w-full h-full object-cover"
                   />
+                  */}
                 </div>
                 <div className="p-4">
-                  <Button className="w-full">Watch Session</Button>
+                  <Button className="w-full bg-sage-700 hover:bg-sage-800">
+                    Watch Session
+                  </Button>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
