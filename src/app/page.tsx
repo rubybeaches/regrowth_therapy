@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* Red Divider */}
       <section className="bg-cream-100">
-        <hr className="max-w-4xl mx-auto border border-solid border-sage-100 md:border-rose-600 " />
+        <hr className="max-w-4xl mx-auto md:border md:border-solid md:border-rose-600 " />
       </section>
 
       {/* Partner Section */}
