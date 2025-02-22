@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-sage-100 text-white relative shadow-xl">
+      <section className="text-white relative shadow-xl">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-serif mb-8">
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="pb-12" id="services">
+      <section className="pb-12 bg-sage-50" id="services">
         <Image
           src="/wavy_cream.png"
           className="mb-6 relative top-[-2px]"
