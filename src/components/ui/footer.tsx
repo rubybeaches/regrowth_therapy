@@ -30,7 +30,7 @@ const Footer = () => {
         />
       </div>
       <div className="container mx-auto px-4 text-center">
-        <p>©2025 Regrowth Therapy & Healing LLC. All Rights Reserved</p>
+        <p>© 2025 Regrowth Therapy & Healing LLC. All Rights Reserved</p>
       </div>
     </footer>
   );
