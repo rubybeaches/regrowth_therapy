@@ -8,7 +8,7 @@ import Footer from "@/components/ui/footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-sage-100">
       <Header />
       {/* Hero Section */}
       <section className="text-white relative shadow-xl">

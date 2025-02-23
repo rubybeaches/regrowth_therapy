@@ -26,7 +26,7 @@ const VideoList = ({ videos }: VideoProp) => {
               <img
                 src={video.url}
                 alt={`Thumbnail for ${video.title}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="p-4 text-white">

@@ -41,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`min-h-screen bg-sage-100 ${caladea.variable} ${tinos.variable} ${script.variable} antialiased`}
+        className={`min-h-screen ${caladea.variable} ${tinos.variable} ${script.variable} antialiased`}
       >
         {children}
       </body>
