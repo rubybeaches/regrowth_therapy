@@ -1,8 +1,8 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import VideoList, { Video } from "@/components/ui/video-list";
 
 // Mock data for videos
-const videos = [
+const userVideos: Video[] = [
   {
     id: "1",
     title: "Session 1: Introduction to Mindfulness",
@@ -41,9 +41,40 @@ const videos = [
   {
     id: "6",
     title: "Session 6: Goal Setting and Achievement",
-    url: "/thumbnail.png?height=180&width=320",
     duration: "52:40",
+    url: "/thumbnail.png?height=180&width=320",
     date: "Feb 30th, 2025",
+  },
+];
+
+const communityVideos = [
+  {
+    id: "c1",
+    title: "Meditation Basics",
+    duration: "15:30",
+    url: "/thumbnail.png?height=180&width=320",
+    date: "Jan 3th, 2025",
+  },
+  {
+    id: "c2",
+    title: "Stress Relief Techniques",
+    duration: "22:45",
+    url: "/thumbnail.png?height=180&width=320",
+    date: "Jan 15th, 2025",
+  },
+  {
+    id: "c3",
+    title: "Mindfulness Practice",
+    duration: "18:20",
+    url: "/thumbnail.png?height=180&width=320",
+    date: "Jan 27th, 2025",
+  },
+  {
+    id: "c4",
+    title: "Guided Relaxation",
+    duration: "25:10",
+    url: "/thumbnail.png?height=180&width=320",
+    date: "Feb 3rd, 2025",
   },
 ];
 
@@ -52,34 +83,24 @@ const VideoLibrary = () => {
     <main className="bg-sage-800 p-8 text-sage-800">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold text-white">
-            Your Session Library
-          </h1>
+          <h1 className="text-3xl font-bold text-white">Video Library</h1>
           <Button variant="outline">Logout</Button>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {videos.map((video) => (
-            <Card
-              key={video.id}
-              className="overflow-hidden bg-sage-800 shadow-none hover:ring-2 hover:ring-sage-700"
-            >
-              <CardContent className="p-0">
-                <div className="aspect-video bg-sage-50">
-                  <img
-                    src={video.url}
-                    alt={`Thumbnail for ${video.title}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-4 text-white">
-                  <h2 className="text-lg">{video.title}</h2>
-                  <p className="text-sage-50">{video.date}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
       </div>
+
+      {/* User Only Videos */}
+      <section className="max-w-6xl mx-auto mb-8">
+        <h2 className="text-2xl font-bold text-white m-4 ">
+          Your Personal Sessions
+        </h2>
+        <VideoList videos={userVideos} />
+      </section>
+
+      {/* Community Videos */}
+      <section className="max-w-6xl mx-auto mb-8">
+        <h2 className="text-2xl font-bold text-white m-4 ">Community Videos</h2>
+        <VideoList videos={communityVideos} />
+      </section>
     </main>
   );
 };

@@ -16,10 +16,10 @@ const Header = () => {
           <span>Regrowth Therapy & Healing</span>
         </Link>
         <nav className="flex gap-2">
-          <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
+          <Button className="bg-sage-100 hover:bg-sage-700 text-white text-base rounded-full">
             Services
           </Button>
-          <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
+          <Button className="bg-sage-100 hover:bg-sage-700 text-white text-base rounded-full">
             FAQ
           </Button>
         </nav>
