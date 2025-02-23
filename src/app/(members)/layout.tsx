@@ -8,7 +8,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div className="bg-sage-800">
       <header className="bg-sage-800 text-white py-8">
         <div className="container max-w-6xl mx-auto flex justify-between items-center text-lg">
           <Link href="/" className="flex items-center gap-2">
@@ -32,9 +32,9 @@ export default function Layout({
         </div>
       </header>
       {children}
-      <div className="container mx-auto p-4 text-center text-white bg-sage-800">
+      <div className="container m-auto p-4 text-center text-white">
         <p>© 2025 Regrowth Therapy & Healing LLC. All Rights Reserved</p>
       </div>
-    </>
+    </div>
   );
 }

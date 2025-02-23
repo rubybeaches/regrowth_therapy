@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
-import VideoList, { Video } from "@/components/ui/video-list";
+import VideoList, { VideoProp } from "@/components/ui/video-list";
 
 // Mock data for videos
-const userVideos: Video[] = [
+const userVideos: VideoProp[] = [
   {
     id: "1",
     title: "Session 1: Introduction to Mindfulness",
@@ -93,13 +93,13 @@ const VideoLibrary = () => {
         <h2 className="text-2xl font-bold text-white m-4 ">
           Your Personal Sessions
         </h2>
-        <VideoList videos={userVideos} />
+        <VideoList videos={userVideos} category="user" />
       </section>
 
       {/* Community Videos */}
       <section className="max-w-6xl mx-auto mb-8">
         <h2 className="text-2xl font-bold text-white m-4 ">Community Videos</h2>
-        <VideoList videos={communityVideos} />
+        <VideoList videos={communityVideos} category="community" />
       </section>
     </main>
   );
