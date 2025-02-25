@@ -27,6 +27,11 @@ export default function Layout({
                 Video Library
               </Button>
             </Link>
+            <Link href="/video-library">
+              <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
+                Book Session
+              </Button>
+            </Link>
           </nav>
         </div>
       </header>
