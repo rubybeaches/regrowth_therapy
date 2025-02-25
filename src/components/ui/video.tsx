@@ -8,14 +8,16 @@ const Video = ({ video }: { video: VideoProp }) => {
       <div className="max-w-6xl mx-auto mb-6">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-2xl font-bold text-white">
-            <Link href="/video-library">Video Library</Link>
+            <Link id="videoBack" className="text-sage-50" href="/video-library">
+              <span>&#8592;</span> Video Library
+            </Link>
           </h1>
         </div>
         <h1 className="text-3xl font-bold text-white">{video.title}</h1>
       </div>
 
       <section className="max-w-6xl mx-auto">
-        <h2 className="text-lg m-4 text-sage-50">{video.date}</h2>
+        <h2 className="text-lg m-2 text-sage-50">from: {video.date}</h2>
         <Card className="overflow-hidden bg-sage-800 shadow-none">
           <CardContent className="p-0">
             <div className="aspect-video relative">
