@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Video = ({ video }: { video: VideoProp }) => {
   return (
-    <main className="bg-sage-800 p-8 text-sage-800">
+    <main className="bg-sage-700 p-8 text-sage-800">
       <div className="max-w-6xl mx-auto mb-6">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-2xl font-bold text-white">

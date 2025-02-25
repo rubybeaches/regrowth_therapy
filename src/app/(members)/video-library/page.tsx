@@ -80,7 +80,7 @@ const communityVideos = [
 
 const VideoLibrary = () => {
   return (
-    <main className="bg-sage-800 p-8 text-sage-800">
+    <main className="bg-sage-700 p-8 text-sage-800">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-white">Video Library</h1>

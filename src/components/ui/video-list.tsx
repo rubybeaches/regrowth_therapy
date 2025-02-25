@@ -20,7 +20,7 @@ const VideoList = ({ videos, category }: VideoListProp) => {
       {videos.map((video) => (
         <Card
           key={video.id}
-          className="overflow-hidden bg-sage-800 shadow-none hover:ring-2 hover:ring-sage-700"
+          className="overflow-hidden bg-sage-700 shadow-none hover:ring-2 hover:ring-sage-100"
         >
           <CardContent className="p-0">
             <Link href={`/${category}/${video.id}`}>

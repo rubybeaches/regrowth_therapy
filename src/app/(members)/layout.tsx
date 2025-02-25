@@ -8,8 +8,8 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-sage-800">
-      <header className="bg-sage-800 text-white py-8">
+    <div className="bg-sage-700">
+      <header className="bg-sage-700 text-white py-8">
         <div className="container max-w-6xl mx-auto flex justify-between items-center text-lg">
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -22,10 +22,10 @@ export default function Layout({
             <span>Regrowth Therapy & Healing</span>
           </Link>
           <nav className="flex gap-2">
-            <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
+            <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
               Services
             </Button>
-            <Button className="bg-sage-800 text-white hover:bg-sage-700 text-base rounded-full">
+            <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
               FAQ
             </Button>
           </nav>
