@@ -22,12 +22,11 @@ export default function Layout({
             <span>Regrowth Therapy & Healing</span>
           </Link>
           <nav className="flex gap-2">
-            <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
-              Services
-            </Button>
-            <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
-              FAQ
-            </Button>
+            <Link href="/video-library">
+              <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
+                Video Library
+              </Button>
+            </Link>
           </nav>
         </div>
       </header>

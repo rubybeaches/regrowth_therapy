@@ -16,7 +16,7 @@ type VideoListProp = {
 
 const VideoList = ({ videos, category }: VideoListProp) => {
   return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <>
       {videos.map((video) => (
         <Card
           key={video.id}
@@ -40,7 +40,7 @@ const VideoList = ({ videos, category }: VideoListProp) => {
           </CardContent>
         </Card>
       ))}
-    </div>
+    </>
   );
 };
 

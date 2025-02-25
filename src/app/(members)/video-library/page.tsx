@@ -1,7 +1,9 @@
-import { Button } from "@/components/ui/button";
 import VideoList, { VideoProp } from "@/components/ui/video-list";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import MoreVideo from "@/components/ui/moreVideo";
 
-// Mock data for videos
+// Mock data for videos // switching to db call - cap list at five
 const userVideos: VideoProp[] = [
   {
     id: "1",
@@ -90,16 +92,47 @@ const VideoLibrary = () => {
 
       {/* User Only Videos */}
       <section className="max-w-6xl mx-auto mb-8">
-        <h2 className="text-2xl font-bold text-white m-4 ">
-          Your Personal Sessions
-        </h2>
-        <VideoList videos={userVideos} category="user" />
+        <div className="flex justify-between items-center">
+          <h2 className="text-2xl font-bold text-white m-4">
+            Your Personal Sessions
+          </h2>
+          <Link href="/user">
+            <Button
+              variant="link"
+              className="text-sage-50 hover:text-white text-base"
+            >
+              See all videos <span className="ml-2">&#8250;</span>
+            </Button>
+          </Link>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <VideoList videos={userVideos.slice(0, 5)} category="user" />
+          <MoreVideo category="user" totalVideos={userVideos.length} />
+        </div>
       </section>
 
       {/* Community Videos */}
       <section className="max-w-6xl mx-auto mb-8">
-        <h2 className="text-2xl font-bold text-white m-4 ">Community Videos</h2>
-        <VideoList videos={communityVideos} category="community" />
+        <div className="flex justify-between items-center">
+          <h2 className="text-2xl font-bold text-white m-4 ">
+            Community Videos
+          </h2>
+          <Link href="/community">
+            <Button
+              variant="link"
+              className="text-sage-50 hover:text-white text-base"
+            >
+              See all videos <span className="ml-2">&#8250;</span>
+            </Button>
+          </Link>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <VideoList videos={communityVideos} category="community" />
+          <MoreVideo
+            category="community"
+            totalVideos={communityVideos.length}
+          />
+        </div>
       </section>
     </main>
   );
