@@ -87,3 +87,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+#videoBack {
+  display: inline-block;
+  transition: all 200ms;
+}
+
+#videoBack:hover {
+  transform: translateX(6px);
+}
+
+#videoBack span {
+  display: inline-block;
+  appearance: none;
+  opacity: 0;
+  transition: all 200ms;
+  width: 0px;
+}
+
+#videoBack:hover span {
+  appearance: visible;
+  opacity: 1;
+  transform: translateX(6px);
+  width: auto;
+}
