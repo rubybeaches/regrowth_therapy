@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { CommunityVideoContext, UserVideoContext } from "@/lib/providers";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,7 +36,9 @@ export default function Layout({
           </nav>
         </div>
       </header>
-      {children}
+      <UserVideoContext>
+        <CommunityVideoContext>{children}</CommunityVideoContext>
+      </UserVideoContext>
       <div className="container m-auto p-4 text-center text-white">
         <p>© 2025 Regrowth Therapy & Healing LLC. All Rights Reserved</p>
       </div>
