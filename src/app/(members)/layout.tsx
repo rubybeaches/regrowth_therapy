@@ -9,7 +9,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-sage-700">
+    <div className="min-h-screen bg-sage-700">
       <header className="bg-sage-700 text-white py-8">
         <div className="container max-w-6xl mx-auto flex justify-between items-center text-lg">
           <Link href="/" className="flex items-center gap-2">
