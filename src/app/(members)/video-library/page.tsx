@@ -1,10 +1,9 @@
 "use client";
-import VideoList, { VideoProp } from "@/components/ui/video-list";
+import VideoList from "@/components/ui/video-list";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import MoreVideo from "@/components/ui/moreVideo";
 import { useCommunityVideoContext, useUserVideoContext } from "@/lib/providers";
-import Image from "next/image";
 
 const VideoLibrary = () => {
   const userVideos = useUserVideoContext();

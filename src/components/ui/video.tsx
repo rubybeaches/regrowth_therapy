@@ -21,10 +21,11 @@ const Video = ({ video }: { video: VideoProp }) => {
         <Card className="overflow-hidden bg-sage-800 shadow-none">
           <CardContent className="p-0">
             <div className="aspect-video relative">
-              <img
+              <iframe
                 src={video.url}
-                alt={`Thumbnail for ${video.title}`}
+                allowFullScreen
                 className="w-full h-full object-cover rounded-lg"
+                title={video.title}
               />
             </div>
           </CardContent>

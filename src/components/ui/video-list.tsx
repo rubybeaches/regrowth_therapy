@@ -4,6 +4,7 @@ import Link from "next/link";
 export interface VideoProp {
   id: string;
   title: string;
+  thumbnail: string;
   url: string;
   duration: string;
   date: string;
@@ -27,7 +28,7 @@ const VideoList = ({ videos, category }: VideoListProp) => {
               <div className="aspect-video relative">
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50"></div>
                 <img
-                  src={video.url}
+                  src={video.thumbnail}
                   alt={`Thumbnail for ${video.title}`}
                   className="w-full h-full object-cover rounded-lg"
                 />
