@@ -67,12 +67,20 @@ export const FAQ = [
     "Many clients notice a difference after just one session, but lasting transformation often takes 3-5 sessions. You'll also get a recorded session to reinforce progress at home.",
   ],
   [
-    "Are virtual hypnotherapy just as effective as in person sessions?",
+    "Is virtual hypnotherapy just as effective as an in person session?",
     "Absolutely! a virtual session has all of the same benefits as being in person with added comforts of being in your own home and in comfy clothes. It also allows us to have a recording that you can look back on to reinforce positve chnages.",
   ],
   [
+    "Does it cost money to become a member?",
+    "No, in fact I am building a collection of free community videos to cover generalized issues with stress relief and relaxtion, so sign up to access free videos now!",
+  ],
+  [
+    "How much does it cost for a session?",
+    "I am happy to provide transparency about the price I set to help you reach your goals. I offer a single package to cover the totality of your treatment, whether it takes three sessions or eight. That cost is four monthly payments of $399 USD, or get a small discount by paying $1,500 USD up front. This price grants you a tailored plan for how we will reach your goals, and allows you exclusive access to all your private recorded sessions in the free members area.",
+  ],
+  [
     "What if I can't be hypnotized?",
-    "The good news is everyone has the capacity to be hypnotized, and you often enter trance like states daily when you daydream, or zone out. I tailor each sesion to your unqiue mind, ensuring that the process helps you achieve your goals.",
+    "The good news is everyone has the capacity to be hypnotized, and you often enter trance like states daily when you daydream, or get into the 'zone.' I tailor each sesion to your unqiue mind, ensuring that the process helps you achieve your goals.",
   ],
   [
     "Is hypnotherapy safe?",
@@ -92,7 +100,7 @@ export const FAQ = [
   ],
   [
     "Can I combine multiple issues in one custom plan?",
-    "Yes again! Your plan can address multiple areas, such as anxiety, confidence, motivation, and more, to provide a holistic transformation.",
+    "Yes again! Your plan can address multiple areas, such as anxiety, confidence, motivation, and more, to provide a holistic transformation. Once we have a discussion about what your specific needs are, I will create a tailored plan for how to accomplish your goals.",
   ],
   [
     "How do I get started with a personalized hypnotherapy plan?",
