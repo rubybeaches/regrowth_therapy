@@ -1,5 +1,12 @@
 import HowItWorks from "@/components/ui/howItWorks";
+import type { Metadata } from "next";
 import { FAQ } from "@/lib/globals";
+
+export const metadata: Metadata = {
+  title: "Hypnotherapy Frequently Asked Questions | Virtual Hypnotherpay",
+  description:
+    "What is Hypnotherapy and why does it work? Create lasting changes to become the best version of your self, book your first session today!",
+};
 
 export default function Page() {
   return (
