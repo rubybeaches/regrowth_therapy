@@ -49,6 +49,57 @@ export const services = [
   },
 ];
 
+export const FAQ = [
+  [
+    "What is hypnotherapy and how does it work?",
+    "Hypnotherapy is a guided process that helps you enter a relaxed, focused state where your unconscious mind becomes more open to positive changes. During hypnosis, we replace limiting beliefs, habits, and fears with empowering suggestions, helping you achieve your goals faster.",
+  ],
+  [
+    "Will I lose control during hypnosis?",
+    "No! Hypnosis is a natural state of deep relaxtion similar to daydreaming. You remain aware and in control the entire time, you cannot be made to do anything against your will.",
+  ],
+  [
+    "Can hypnosis help me if I've tried other methods and failed?",
+    "Yes! Unlike willpower based approaches, hypnotherapy works at the unconscious level, addressing the root causes of habits, fears, or mental blocks. This makes change feel natural and lasting instead of forced.",
+  ],
+  [
+    "How many sessions will I need?",
+    "Many clients notice a difference after just one session, but lasting transformation often takes 3-5 sessions. You'll also get a recorded session to reinforce progress at home.",
+  ],
+  [
+    "Are virtual hypnotherapy just as effective as in person sessions?",
+    "Absolutely! a virtual session has all of the same benefits as being in person with added comforts of being in your own home and in comfy clothes. It also allows us to have a recording that you can look back on to reinforce positve chnages.",
+  ],
+  [
+    "What if I can't be hypnotized?",
+    "The good news is everyone has the capacity to be hypnotized, and you often enter trance like states daily when you daydream, or zone out. I tailor each sesion to your unqiue mind, ensuring that the process helps you achieve your goals.",
+  ],
+  [
+    "Is hypnotherapy safe?",
+    "Yes! Hypnosis is both natural and safe. It's a recognized therapeutic practice that has been used for decades to help people overcome challenges and improve their well-being.",
+  ],
+  [
+    "What is energy healing, and how does it work?",
+    "Energy healing is a holistic practice that balances your body's energy field to release emotional blocks, relieve stress, and promote healing. It works by removing energetic imbalances that may be causing physical, mental, or emotional discomfort.",
+  ],
+  [
+    "Do I need to believe in energy healing for it to work?",
+    "No! Whether you're spiritual or not, energy healing works by realigning your body’s natural energy flow, which can have profound effects on your well-being. Many clients feel lighter, calmer, and more balanced after just one session.",
+  ],
+  [
+    "Can I combine hypnotherapy and energy healing?",
+    "Absolutely! Hypnotherapy rewires your unconscious, while energy healing clears blockages that might be holding you back. Combining both can lead to faster and deeper transformations.",
+  ],
+  [
+    "Can I combine multiple issues in one custom plan?",
+    "Yes again! Your plan can address multiple areas, such as anxiety, confidence, motivation, and more, to provide a holistic transformation.",
+  ],
+  [
+    "How do I get started with a personalized hypnotherapy plan?",
+    "Book a consultation where we'll discuss your goals, challenges, and desired outcomes. From there, I'll create a tailored approach designed just for you.",
+  ],
+];
+
 export const EnergyHealing = {
   metaTitle: "Energy Healing | Balance Your Mind, Body & Spirit",
   metaDescription:
@@ -392,6 +443,3 @@ export const communityVideos = [
     date: "Feb 3rd, 2025",
   },
 ];
-
-// Add an FAQ entry about hypnotherapy side effects - easier to make phone calls, daily life stuff getting easier...etc.
-// as well as the combining plans option faw from custom
