@@ -20,7 +20,7 @@ const Header = () => {
             Services
           </Button>
           <Button className="bg-sage-100 hover:bg-sage-700 text-white text-base rounded-full">
-            FAQ
+            <Link href="/faq">FAQ</Link>
           </Button>
         </nav>
       </div>

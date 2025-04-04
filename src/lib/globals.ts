@@ -49,7 +49,7 @@ export const services = [
   },
 ];
 
-export const FAQ = [
+export const HypnotherapyFAQ = [
   [
     "What is hypnotherapy and how does it work?",
     "Hypnotherapy is a guided process that helps you enter a relaxed, focused state where your unconscious mind becomes more open to positive changes. During hypnosis, we replace limiting beliefs, habits, and fears with empowering suggestions, helping you achieve your goals faster.",
@@ -87,6 +87,13 @@ export const FAQ = [
     "Yes! Hypnosis is both natural and safe. It's a recognized therapeutic practice that has been used for decades to help people overcome challenges and improve their well-being.",
   ],
   [
+    "How do I get started with a personalized hypnotherapy plan?",
+    "Book a consultation where we'll discuss your goals, challenges, and desired outcomes. From there, I'll create a tailored approach designed just for you.",
+  ],
+];
+
+export const EnergyHealingFAQ = [
+  [
     "What is energy healing, and how does it work?",
     "Energy healing is a holistic practice that balances your body's energy field to release emotional blocks, relieve stress, and promote healing. It works by removing energetic imbalances that may be causing physical, mental, or emotional discomfort.",
   ],
@@ -101,10 +108,6 @@ export const FAQ = [
   [
     "Can I combine multiple issues in one custom plan?",
     "Yes again! Your plan can address multiple areas, such as anxiety, confidence, motivation, and more, to provide a holistic transformation. Once we have a discussion about what your specific needs are, I will create a tailored plan for how to accomplish your goals.",
-  ],
-  [
-    "How do I get started with a personalized hypnotherapy plan?",
-    "Book a consultation where we'll discuss your goals, challenges, and desired outcomes. From there, I'll create a tailored approach designed just for you.",
   ],
 ];
 
