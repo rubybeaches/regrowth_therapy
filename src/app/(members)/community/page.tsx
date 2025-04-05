@@ -1,6 +1,6 @@
 import Link from "next/link";
 import VideoList from "@/components/ui/video-list";
-import { communityVideos } from "@/lib/globals";
+import { communityVideos } from "@/lib/mock";
 
 const Page = () => {
   return (

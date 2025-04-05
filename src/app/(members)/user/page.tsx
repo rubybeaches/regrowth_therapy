@@ -1,7 +1,7 @@
 import Link from "next/link";
 import VideoList from "@/components/ui/video-list";
 // import VideoList, { VideoProp } from "@/components/ui/video-list";
-import { userVideos } from "@/lib/globals";
+import { userVideos } from "@/lib/mock";
 
 const userVideoLibrary = () => {
   return (

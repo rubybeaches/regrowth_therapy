@@ -1,5 +1,5 @@
 import Video from "@/components/ui/video";
-import { userVideos } from "@/lib/globals";
+import { userVideos } from "@/lib/mock";
 
 export function ClientPage({ videoID }: { videoID: string }) {
   // get user auth from middelware?

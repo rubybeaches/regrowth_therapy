@@ -2,7 +2,7 @@ import VideoList from "@/components/ui/video-list";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import MoreVideo from "@/components/ui/moreVideo";
-import { communityVideos, userVideos } from "@/lib/globals";
+import { communityVideos, userVideos } from "@/lib/mock";
 
 const VideoLibrary = () => {
   return (
