@@ -13,7 +13,6 @@ const VideoLibrary = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-white">Video Library</h1>
-          <Button variant="outline">Logout</Button>
         </div>
       </div>
 

@@ -10,7 +10,7 @@ export default function Layout({
 }>) {
   return (
     <div className="min-h-screen bg-sage-700">
-      <header className="bg-sage-700 text-white py-4">
+      <header className="bg-sage-700 text-white p-4">
         <div className="container max-w-6xl mx-auto flex justify-between items-center text-lg">
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -23,12 +23,7 @@ export default function Layout({
             <span>Regrowth Therapy & Healing</span>
           </Link>
           <nav className="flex gap-2">
-            <Link href="/video-library">
-              <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
-                Video Library
-              </Button>
-            </Link>
-            <Link href="/video-library">
+            <Link href="">
               <Button className="bg-sage-700 text-white hover:bg-sage-100 text-base rounded-full">
                 Book Session
               </Button>
