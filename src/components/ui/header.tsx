@@ -33,8 +33,9 @@ const Header = () => {
           <Image
             src="/butterfly_logo_white.png"
             alt="Butterfly logo"
-            width={36}
-            height={36}
+            width={161}
+            height={134}
+            className="w-[36px] h-auto"
           />
           <span>Regrowth Therapy & Healing</span>
         </Link>
@@ -48,14 +49,14 @@ const Header = () => {
               Services
             </Button>
             <ul
-              className={`absolute p-6 bg-sage-700 rounded-lg w-[300px] z-[99] ${
+              className={`absolute p-4 bg-sage-700 rounded-lg w-[250px] z-[99] right-[0px] ${
                 showServices ? "block" : "hidden"
               }`}
               onMouseEnter={() => clearTimer()}
               onMouseLeave={() => toggleServicMenu(false)}
             >
               {services.map((service, index) => (
-                <li key={index} className="text-base">
+                <li key={index} className="text-base p-1">
                   <Link href={service.link}>{service.title}</Link>
                 </li>
               ))}

@@ -76,7 +76,7 @@ export const HypnotherapyFAQ = [
   ],
   [
     "How much does it cost for a session?",
-    "I am happy to provide transparency about the price I set to help you reach your goals. I offer a single package to cover the totality of your treatment, whether it takes three sessions or eight. That cost is four monthly payments of $399 USD, or get a small discount by paying $1,500 USD up front. This price grants you a tailored plan for how we will reach your goals, and allows you exclusive access to all your private recorded sessions in the free members area.",
+    "I am happy to provide transparency about the price I set to help you reach your goals. I offer a single package to cover the totality of your treatment, whether it takes three sessions or five. That cost is four monthly payments of $399 USD, or get a small discount by paying $1,500 USD up front. This price grants you a tailored plan for how we will reach your goals, and allows you exclusive access to all your private recorded sessions in the free members area.",
   ],
   [
     "What if I can't be hypnotized?",
