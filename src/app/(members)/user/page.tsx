@@ -1,10 +1,9 @@
-"use client";
 import Link from "next/link";
-import VideoList, { VideoProp } from "@/components/ui/video-list";
-import { useUserVideoContext } from "@/lib/providers";
+import VideoList from "@/components/ui/video-list";
+// import VideoList, { VideoProp } from "@/components/ui/video-list";
+import { userVideos } from "@/lib/globals";
 
 const userVideoLibrary = () => {
-  const userVideos: VideoProp[] = useUserVideoContext();
   return (
     <main className="bg-sage-700 p-8 text-sage-800">
       <div className="max-w-6xl mx-auto mb-8">
