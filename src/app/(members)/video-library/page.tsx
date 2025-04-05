@@ -41,7 +41,8 @@ const VideoLibrary = () => {
         ) : (
           <div className="container text-sage-50 mx-auto flex justify-center items-center">
             <p className="text-sage-50 text-center m-2 text-lg">
-              Videos available after sessions. Book your first session today!
+              Recordings available after your first session. Book your
+              consultation today!
             </p>
           </div>
         )}
