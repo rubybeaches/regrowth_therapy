@@ -10,7 +10,7 @@ export default function Layout({
 }>) {
   return (
     <div className="min-h-screen bg-sage-700">
-      <header className="bg-sage-700 text-white py-8">
+      <header className="bg-sage-700 text-white py-4">
         <div className="container max-w-6xl mx-auto flex justify-between items-center text-lg">
           <Link href="/" className="flex items-center gap-2">
             <Image
