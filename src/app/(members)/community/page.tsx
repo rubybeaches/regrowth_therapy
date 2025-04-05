@@ -1,10 +1,8 @@
-"use client";
 import Link from "next/link";
 import VideoList from "@/components/ui/video-list";
-import { useCommunityVideoContext } from "@/lib/providers";
+import { communityVideos } from "@/lib/mock";
 
 const Page = () => {
-  const communityVideos = useCommunityVideoContext();
   return (
     <main className="bg-sage-700 p-8 text-sage-800">
       <div className="max-w-6xl mx-auto mb-8">
